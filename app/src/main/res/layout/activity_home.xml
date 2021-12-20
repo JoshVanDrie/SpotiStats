@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_weight="2"
-        android:contentDescription="Spotistats Logo"
+        android:contentDescription="SpotiStats Logo"
         app:srcCompat="@mipmap/logo_green" />
 
     <LinearLayout
@@ -76,7 +76,7 @@
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/mac_miller" />
+                    app:srcCompat="@drawable/sample_artist_mac" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -114,7 +114,7 @@
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/backseat_lovers"/>
+                    android:src="@drawable/sample_artist_backseat"/>
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -151,7 +151,7 @@
                     android:layout_width="125dp"
                     android:layout_height="125dp"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/dominic_fike" />
+                    app:srcCompat="@drawable/dominic_fike" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -230,7 +230,7 @@
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/what_could_possibly_go_wrong" />
+                    app:srcCompat="@drawable/sample_album_wcpgo" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -268,7 +268,7 @@
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/ylang_ylang" />
+                    app:srcCompat="@drawable/sample_album_ylang" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -304,7 +304,7 @@
                     android:id="@+id/albumPic3"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
-                    app:srcCompat="@mipmap/circles_album" />
+                    app:srcCompat="@drawable/sample_album_cirlces" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -384,7 +384,7 @@
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/sk8board_p" />
+                    app:srcCompat="@drawable/sample_song_sk8board" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -422,7 +422,7 @@
                     android:layout_height="125dp"
                     android:contentDescription="125dp"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/polo_jeans" />
+                    app:srcCompat="@drawable/sample_song_polo" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -459,7 +459,7 @@
                     android:layout_width="125dp"
                     android:layout_height="125dp"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@mipmap/notes_on_a_conditional_form" />
+                    app:srcCompat="@drawable/sample_song_inliinwy" />
             </androidx.cardview.widget.CardView>
 
             <TextView

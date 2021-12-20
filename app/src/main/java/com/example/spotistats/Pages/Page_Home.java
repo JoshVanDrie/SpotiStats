@@ -1,4 +1,4 @@
-package com.example.spotistats.Pages;
+package com.example.spotistats.pages;
 
 import androidx.appcompat.app.AppCompatActivity;
 

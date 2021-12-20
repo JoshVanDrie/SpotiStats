@@ -150,7 +150,8 @@
                     android:id="@+id/artistPic3"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
-                    tools:srcCompat="@mipmap/circles_album" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/dominic_fike" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -228,7 +229,8 @@
                     android:layout_width="125dp"
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@mipmap/circles_album" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/what_could_possibly_go_wrong" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -265,7 +267,8 @@
                     android:layout_width="125dp"
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@mipmap/circles_album" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/ylang_ylang" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -301,7 +304,7 @@
                     android:id="@+id/albumPic3"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
-                    tools:srcCompat="@mipmap/circles_album" />
+                    app:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -380,7 +383,8 @@
                     android:layout_width="125dp"
                     android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@mipmap/circles_album" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/sk8board_p" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -417,7 +421,8 @@
                     android:layout_width="125dp"
                     android:layout_height="125dp"
                     android:contentDescription="125dp"
-                    tools:srcCompat="@mipmap/circles_album" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/polo_jeans" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -453,7 +458,8 @@
                     android:id="@+id/songPic3"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
-                    tools:srcCompat="@mipmap/circles_album" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/notes_on_a_conditional_form" />
             </androidx.cardview.widget.CardView>
 
             <TextView

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpotiStats">
         <activity
-            android:name=".Pages.Page_Home"
+            android:name=".pages.Page_Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

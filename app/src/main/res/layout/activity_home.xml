@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/black"
     android:gravity="bottom"
-    android:background="@color/black">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        app:srcCompat="@drawable/logo_green" />
+        android:layout_height="120dp"
+        android:layout_weight="2"
+        android:contentDescription="Spotistats Logo"
+        app:srcCompat="@mipmap/logo_green" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/top_artists"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="3"
-            android:fontFamily="@font/gotham"
-            android:gravity="left"
+            android:fontFamily="@font/raleway_black_talic"
+            android:gravity="left|bottom"
             android:text="Top Artists"
             android:textColor="@color/white"
             android:textSize="20sp" />
@@ -38,10 +41,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:fontFamily="@font/gotham"
+            android:fontFamily="@font/raleway_medium"
             android:gravity="center_vertical"
             android:lines="1"
-            android:text="View More >"
+            android:text="@string/view_more"
             android:textColor="@color/white"
             android:textSize="11sp" />
 
@@ -52,7 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:gravity="center"
+        android:layout_weight="2"
+        android:gravity="center|top"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -68,10 +72,11 @@
 
                 <ImageView
                     android:id="@+id/artistPic1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/mac_miller" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -83,7 +88,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Mac Miller"
+                android:text="@string/top_artist_1"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -105,10 +110,11 @@
 
                 <ImageView
                     android:id="@+id/artistPic2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/backseat_lovers" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -120,7 +126,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Backseat Lovers"
+                android:text="@string/top_artist_2"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -142,9 +148,9 @@
 
                 <ImageView
                     android:id="@+id/artistPic3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    tools:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -156,7 +162,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Dominic Fike"
+                android:text="@string/top_artist_3"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -167,16 +173,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/top_albums"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="3"
-            android:fontFamily="@font/gotham"
-            android:gravity="left"
+            android:fontFamily="@font/raleway_black_talic"
+            android:gravity="left|bottom"
             android:text="Top Albums"
             android:textColor="@color/white"
             android:textSize="20sp" />
@@ -186,10 +194,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:fontFamily="@font/gotham"
+            android:fontFamily="@font/raleway_medium"
             android:gravity="center_vertical"
             android:lines="1"
-            android:text="View More >"
+            android:text="@string/view_more"
             android:textColor="@color/white"
             android:textSize="11sp" />
 
@@ -200,7 +208,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:gravity="center"
+        android:layout_weight="2"
+        android:gravity="center|top"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -216,10 +225,10 @@
 
                 <ImageView
                     android:id="@+id/albumPic1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -231,7 +240,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="What Could Possibly Go Wrong?"
+                android:text="@string/top_album_1"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -253,10 +262,10 @@
 
                 <ImageView
                     android:id="@+id/albumPic2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -268,7 +277,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Circles"
+                android:text="@string/top_album_2"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -290,9 +299,9 @@
 
                 <ImageView
                     android:id="@+id/albumPic3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    tools:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -304,7 +313,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Ylang Ylang EP"
+                android:text="@string/top_album_3"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -315,16 +324,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/top_songs"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="3"
-            android:fontFamily="@font/gotham"
-            android:gravity="left"
+            android:fontFamily="@font/raleway_black_talic"
+            android:gravity="left|bottom"
             android:text="Top Songs"
             android:textColor="@color/white"
             android:textSize="20sp" />
@@ -334,7 +345,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:fontFamily="@font/gotham"
+            android:fontFamily="@font/raleway_medium"
             android:gravity="center_vertical"
             android:lines="1"
             android:text="View More >"
@@ -344,13 +355,13 @@
     </LinearLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
-        android:gravity="center"
+        android:layout_weight="2"
+        android:gravity="center|top"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -366,10 +377,10 @@
 
                 <ImageView
                     android:id="@+id/songPic1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:contentDescription="TODO"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -381,7 +392,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Mac Miller"
+                android:text="@string/top_song_1"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -403,10 +414,10 @@
 
                 <ImageView
                     android:id="@+id/songPic2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="TODO"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:contentDescription="125dp"
+                    tools:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -418,7 +429,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Backseat Lovers"
+                android:text="@string/top_song_2"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -440,9 +451,9 @@
 
                 <ImageView
                     android:id="@+id/songPic3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    tools:srcCompat="@mipmap/circles_album" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -454,7 +465,7 @@
                 android:fontFamily="@font/gotham"
                 android:gravity="center|top"
                 android:lines="2"
-                android:text="Del Water Gap"
+                android:text="@string/top_song_3"
                 android:textColor="@color/white" />
 
         </LinearLayout>

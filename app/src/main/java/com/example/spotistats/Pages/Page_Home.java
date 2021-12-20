@@ -1,10 +1,12 @@
-package com.example.spotistats;
+package com.example.spotistats.Pages;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Home extends AppCompatActivity {
+import com.example.spotistats.R;
+
+public class Page_Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
